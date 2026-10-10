@@ -150,7 +150,7 @@ export default function App() {
             <div className="cta"><a className="btn primary" href="#work">See my projects</a><a className="btn" href="#contact">Start a project</a></div>
           </div>
           <div className="photo">
-            {photoOk ? <img src="/profile.jpg" alt={`Portrait of ${p.name}`} onError={() => setPhotoOk(false)} /> : p.initials}
+            {photoOk ? <img src="/profile.png" alt={`Portrait of ${p.name}`} onError={() => setPhotoOk(false)} /> : p.initials}
           </div>
         </div>
         <div className="stats">{p.stats.map((s) => <div key={s.label}><Count value={s.value} /><span>{s.label}</span></div>)}</div>
